@@ -1,0 +1,16 @@
+<ion-view view-title="Products">
+  <ion-content>
+    <div class="list">
+
+    <a class="item item-thumbnail-left" ng-repeat="product in products" href="#/app/products/{{product.id}}">
+      <img ng-src="{{product.images[0]}}">
+      <h2>{{product.name}}</h2>
+      <p>{{product.artist}}</p>
+      <b>$ {{product.price}}</b>
+    </a>
+
+  
+
+</div>
+  </ion-content>
+</ion-view>
